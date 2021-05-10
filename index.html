@@ -1,54 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+<!-- ______________________font par google font________________________ -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,600&display=swap" rel="stylesheet"> 
     <title>Projet 2</title>
 </head>
 
 <body>
+    <!-- __________________ en-tete du site ________________________ -->
     <div class="container">
-        <!-- en-tete du site -->
         <header>
-            <!-- logo -->
-<nav></nav>
+<!-- ______________________logo________________________ -->
+<div class="logo"></div>
+<!-- ______________________nav________________________ -->
+            <nav>
+                <ul class="nav">
+                    <li class="linav">
+                        <a href="#" class="navlink">Hébergements</a>
+                    </li>
+                    <li class="linav">
+                        <a href="#" class="navlink">Activités</a>
+                    </li>
+                    <li class="linav">
+                        <a href="#" class="navlink">S'inscrire</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <!-- main ! contenu principal du site -->
+<!-- ____________________main ! contenu principal du site __________________________ -->
+        
         <main>
+
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>en plein centre ville ou en pleine nature</p>
-            <!--  mettre le main en flex pour que les elements reagissenst en flexbox-->
-            <!-- ______________________form recherche________________________ -->
-            <div class="input-group recherche">
-                <div class="input-group-prepend">
-                    <span class="button-at">@</span>
+
+<!--  mettre le main en flex pour que les elements reagissenst en flexbox-->
+<!-- ______________________form recherche________________________ -->
+            <div class="form-recherche">
+                <div class="btn-at">
+                    @
                 </div>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                <input type="text" class="form-input" placeholder="" aria-label="search"
                     aria-describedby="basic-addon1">
-                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="form-btn">Rechercher</button>
             </div>
 
-            <div class="filtre"></div>
-            <div class="filtre"><p>plus de 500 logements sont disponibles dans cette ville</p></div>
-            <!-- ________________________contenu hebergement______________________ -->
-            <div class="flexContent ">
-                <div class="part_hebergements"></div>
-                
-                <div class="part_populaires"></div>
-                <div class="part_activites"></div>
+            <div class="filtre">
+                <p>Filtre</p>
             </div>
+            <div class="info">
+                <p>plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+<!-- ________________________contenu hebergement______________________ -->
+            <div class="flexContent">
+                <ul class="part_hebergements flexContent">
+                    <h2 class="titre-part">Hébergements à Marseille</h2>
+                    <li class="card items-hebergements">
+                        <div class="img-hbgmt"></div>
+                        <h3 class="titre-hbgmt">Auberge la Cannebière</h3>
+                        <p class="prix-hbgmt">Nuit à partir de 25<span>€</span> </p>
+                    </li>
+                    <li class="card items-hebergements">
+                        <div class="img-hbgmt"></div>
+                        <h3 class="titre-hbgmt">Hôtel du port</h3>
+                        <p class="prix-hbgmt">Nuit à partir de 52<span>€</span></p>
+                    </li>
+                    <li class="card items-hebergements">
+                        <div class="img-hbgmt"></div>
+                        <h3 class="titre-hbgmt">Hôtel Les mouettes</h3>
+                        <p class="prix-hbgmt">Nuit à partir de 76<span>€</span></p>
+                    </li>
+                    <li class="card items-hebergements">
+                        <div class="img-hbgmt"></div>
+                        <h3 class="titre-hbgmt">Hôtel de la mer</h3>
+                        <p class="prix-hbgmt">Nuit à partir de 46<span>€</span></p>
+                    </li>
+                    <li class="card items-hebergements">
+                        <div class="img-hbgmt"></div>
+                        <h3 class="titre-hbgmt">Auberge Le Panier</h3>
+                        <p class="prix-hbgmt">Nuit à partir de 23<span>€</span></p>
+                    </li>
+                    <li class="card items-hebergements">
+                        <div class="img-hbgmt"></div>
+                        <h3 class="titre-hbgmt">Hôtel chez Amina</h3>
+                        <p class="prix-hbgmt">Nuit à partir de 96<span>€</span></p>
+                    </li>
+                    <p class="text-hbgmt">afficher plus</p>
+                </ul>
+<!-- ________________________contenu populaires______________________ -->
+                <ul class="part_populaires flexColumn">
+                    <h2 class="titre-part">Les plus populaires</h2>
+                    <li class="card items-populaires">
+                        <div class="img-ppl"></div>
+                        <div class="txt-ppl">
+                            <h3 class="titre-ppl">Hôtel Le soleil du matin</h3>
+                            <p class="prix-ppl">Nuit à partir de 128<span>€</span></p>
+                        </div>
+                    </li>
+                    <li class="card items-populaires">
+                        <div class="img-ppl"></div>
+                        <div class="txt-ppl">
+                            <h3 class="titre-ppl">Au cœur de l'eau<br>Chambres d'hôtes</h3>
+                            <p class="prix-ppl">Nuit à partir de 71<span>€</span></p>
+                        </div>
+                    </li>
+                    <li class="card items-populaires">
+                        <div class="img-ppl"></div>
+                        <div class="txt-ppl">
+                            <h3 class="titre-ppl">Hôtel Tout bleu et Blanc</h3>
+                            <p class="prix-ppl">Nuit à partir de 68<span>€</span></p>
+                        </div>
+                    </li>
+                </ul>
+<!-- ________________________contenu activites______________________ -->
+                <ul class="part_activites flexContent">
+                    <h2 class="titre-part">Activités à Marseille</h2>
+                    <li class="card items-activites">
+                        <div class="img-actvt"></div>
+                        <h3 class="titre-actvt">Vieux Port</h3>
+                    </li>
+                    <li class="card items-activites">
+                        <div class="img-actvt"></div>
+                        <h3 class="titre-actvt">Fort de Pomègues</h3>
+                    </li>
+                    <li class="card items-activites">
+                        <div class="img-actvt"></div>
+                        <h3 class="titre-actvt">Îles du Frioul</h3>
+                    </li>
+                    <li class="card items-activites">
+                        <div class="img-actvt"></div>
+                        <h3 class="titre-actvt">Parc National des Calanques</h3>
+                    </li>
+                    <li class="card items-activites">
+                        <div class="img-actvt"></div>
+                        <h3 class="titre-actvt">Notre-Dame-de-la-Garde</h3>
+                    </li>
+                    <li class="card items-activites">
+                        <div class="img-actvt"></div>
+                        <h3 class="titre-actvt">Parc Longchamp</h3>
+                    </li>
+                </ul>
+            </div><!-- flexContent -->
 
-            <!-- ________________________contenu activites______________________ -->
+<!-- ________________________contenu______________________ -->
 
         </main>
-    </div>  
-    <!-- Footer : zone du bas, ex: les liens administratifs, mentions légales, plan du site...-->
+    </div>  <!-- fin du container -->
+<!-- Footer : zone du bas, ex: les liens administratifs, mentions légales, plan du site...-->
     <footer>
-<div class="part1"></div>
-<div class="part2"></div>
-<div class="part3"></div>
+        <div class="cont-footer flexFooter">
+            <ul class="footerP1">
+                <h4 class="fp1">A propos</h4>
+                <li class="fp1">Fonctionnement du site</li>
+                <li class="fp1">Conditions générales de vente</li>
+                <li class="fp1">Données et confidentialité</li>
+            </ul>
+
+            <ul class="footerP2">
+                <h4 class="fp2">Nos hébergements</h4>
+                <li class="fp2">Charte qualité</li>
+                <li class="fp2">Soumettre votre hôtel</li>
+            </ul>
+            
+            <ul class="footerP3">
+                <h4 class="fp3">Assistance</h4>
+                <li class="fp3">Centre d'aide</li>
+                <li class="fp3">Nous contacter</li>
+            </ul>
+        
+        </div>
     </footer>
 </body>
 </html>

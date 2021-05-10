@@ -24,33 +24,46 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+ol, ul, li {
+    list-style: none;
+}
+
 body {
-    
-	line-height: 1;
+    font-family: "Raleway";
+	/* line-height: 1; */
 
 }
-ol, ul {
-	list-style: none;
+h1{
+    font-size: 1.5rem;
+    font-weight: 800 ;
 }
-blockquote, q {
-	quotes: none;
+h2{
+    font-weight: 900;
+    width: 100%;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+h3{
+    font-size: 0.8rem;
+    font-weight: 900;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+h4{
+    font-size: 1rem;
+    font-weight: 900;
 }
+span{
+    font-weight: 900;
+}
+
+
 header{
-    background-color: rgb(19, 19, 19);
+    /* background-color: rgb(19, 19, 19); */
     height: 5rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer{
-    background-color: rgb(19, 19, 19);
+    background-color: #F2F2F2;
     height: 5rem;
     /* a retirer quand il y aura du contenu */
 }
@@ -60,7 +73,23 @@ footer{
     width: 80%;
     margin: auto;
     padding: 0 !important;
-    background-color: rgb(119, 119, 119);
+    /* background-color: rgb(119, 119, 119); */
+
+}
+.logo{
+    width: 5rem;
+    height: 5rem;
+    background-color: #0065FC;
+}
+.nav{
+    display: inline-block;
+    display: flex;
+    flex-flow: row wrap;
+   
+}
+.navlink{
+    color: #0065FC;
+    text-decoration-line: none;
 
 }
 .recherche{
@@ -72,9 +101,21 @@ footer{
     align-items: stretch;
     width: 100%;
 }
-.button-at{
+.form-input, .form-btn{
+    padding: 0.375rem .75rem;
+    margin-left: -.3rem;
+}
+.form-btn{
+    border: unset;
+    border-radius: 0 5%;
+    color: white;
+    background-color: #0065FC;
+
+}
+.btn-at{
     
-        display: flex;
+        /* display: flex; */
+        display: inline-block;
         align-items: center;
         padding: .375rem .75rem;
         font-size: 1rem;
@@ -90,23 +131,73 @@ footer{
 }
 .flexContent{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.flexColumn{
+    display: flex;
+    /* flex-direction:column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+.flexFooter{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.card{
+   
+    /* height:5rem; */
+    background-color: white;
+    border-radius: 5px;
+    margin:5px;
+    border: white solid 5px;
+    border-radius: 15px;
 }
 .part_hebergements{
-    width: 60%;
-    height:5rem;
-    background-color: rgb(58, 58, 58);
+    width: 64%;
+    /* height:5rem; */
+    background-color: #F2F2F2;
+    /* padding:5px; */
 
 }
+
 .part_populaires{
     width: 35%;
-    height:5rem;
-    background-color: rgb(58, 58, 58);
+    /* height:5rem; */
+    background-color: #F2F2F2;
+    /* padding:5px; */
 }
 .part_activites{
     width: 100%;
-    height:5rem;
-    background-color: rgb(58, 58, 58);
+    /* height:5rem; */
+    /* background-color: rgb(58, 58, 58); */
+    /* padding:5px; */
+}
+.items-hebergements{
+    width:30% !important;
+}
+
+.img-hbgmt, .img-ppl, .img-actvt{
+/* width: 100%; */
+height: 5rem;
+background-color: rgb(202, 202, 202);
+border-radius: 10px;
+}
+.img-ppl{
+    width:30%;
+}
+
+.items-populaires{
+    display: flex;
+    flex-flow: row wrap;
+    width:90%;
+}
+
+.items-activites{
+    width:30%
+}
+.txt-ppl{
+    flex-flow: column wrap;
 }
