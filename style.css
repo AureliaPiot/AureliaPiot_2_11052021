@@ -1,4 +1,6 @@
-
+*, ::after ::before{
+    box-sizing: border-box;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -34,17 +36,17 @@ body {
 
 }
 h1{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 800 ;
-    margin: 10px 0;
+    margin-top: 2rem;
 }
 h2{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 800;
     width: 100%;
 }
 h3{
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 800;
 }
 h4{
@@ -54,16 +56,37 @@ h4{
 span{
     font-weight: 800;
 }
+.undtitle{
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+.titre-part{
+    width: 100%;
+}
+.titre-part-ppl{
+    display: flex;
+    font-size: 1.7rem;
+}
 .prix-hbgmt, .prix-ppl{
     font-size: 1rem;
 }
+.prix-ppl{
+    margin: 10px 0 40px 0;
+}
+.blu{
+    color: #0065FC !important ;
+}
+.fa-star{
+    color:#D9D9D9;
+}
+
 
 header{
     /* background-color: rgb(19, 19, 19); */
     /* height: 5rem; */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 
 footer{
@@ -72,7 +95,7 @@ footer{
 /* reset css */
 
 .container{
-    width: 90%;
+    width: 93%;
     margin: auto;
     padding: 0 !important;
     /* display: flex;
@@ -87,23 +110,38 @@ footer{
 }
 
 .logo{
-    /* width: 5rem;*/
-    height: 5rem; 
-    /* background-color: #0065FC; */
-
+    height: 3.5rem;
+    margin-top: 13px;
 }
 .nav{
-    /* display: inline-block; */
+    height: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap;   
+    align-items: center;
+}
 
-   
+.linav, .linav a:visited{
+    display: flex;
+    height: 100%;
+    color: black;
+    margin-left: 3rem;
+    align-items: flex-end;
 }
 .navlink{
-    color: #0065FC;
+    font-size: 1.2rem;    
     text-decoration-line: none;
-
 }
+.sub , .sub a:visited{
+    font-weight: 800;
+    color: #0065FC !important;
+}
+.active, .active a:visited{
+    font-weight: 600;
+    color: #0065FC;
+    border-top:solid 3px #0065FC ;
+}
+
+
 .recherche{
     width: 15rem !important;
     margin: 0 !important;
@@ -114,8 +152,11 @@ footer{
     width: 100%;
 }
 
-.mh-10{
-    margin: 10px 0;
+.form-srch{
+    display: flex;
+    height: 3rem;
+    margin: 1.5rem 0;
+
 }
 
 .form-input, .form-btn{
@@ -126,24 +167,23 @@ footer{
 }
 .form-btn{
     border: unset;
-    border-radius: 0 13px 13px 0;
+    border-radius: 0 15px 15px 0;
     padding: 0.7rem 1.3rem;
     color: white;
     background-color: #0065FC;
-    font-weight: 700;
+    /* font-weight: 700; */
+    font-size: 1.2rem;
 }
 .btn-at{
     
-    /* display: flex; */
-    display: inline-block;
+    display: flex;
     align-items: center;
-    padding: .55rem .75rem;
-    text-align: center;
-    white-space: nowrap;
+    justify-content: center;
+    width: 56px;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
-    border-radius: .25rem;
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0 0 15px;
+    font-size: 1.3rem;
 
 }
 .flexSpaceBe{
@@ -177,6 +217,7 @@ footer{
     margin: 25px 0px;
     border: white solid 5px;
     border-radius: 25px;
+    box-shadow: 10px 10px 10px #0000001f;
 }
 .filtre{
     display:flex;
@@ -187,22 +228,48 @@ footer{
     font-weight: 800;
     
 }
-.filtre p:nth-child(1n+2){
-    margin:0 20px;
-    border: #D9D9D9 2px solid;
-    border-left-color:#DEEBFF;
-    border-radius: 30px ;
-    padding: 0 25px 0 0;
+.filtrebox{
+    display: flex;
+    margin: 1rem;
+
 }
+
+.filtrebox p {
+    border: #D9D9D9 2px solid;
+    border-left: transparent;
+    border-radius: 0 30px 30px 0;
+    padding: 16px 30px 16px 40px;
+    margin-left: -26px;
+}
+
+.fa-star{
+font-size: 14px;
+}
+
 .filtre .fas{
+    z-index: 1;
+    font-size: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
     background-color: #DEEBFF;
-    border: #DEEBFF 2px solid;
+    border: #DEEBFF 3px solid;
     border-radius: 50%;
     padding: 15px;
     color: #0065FC;
+    
 }
 .info{
     margin: 20px 0px;
+}
+.info .fas{
+    font-size: 13px;
+    width: 13px;
+    padding: 7px;
+    margin: 0 16px 0 0;
+    text-align: center;
+    color: #0065FC;
+    border-radius: 50%;
+    border: #D9D9D9 1px solid;
 }
 .part_hebergements{
     width: 60%;
@@ -219,49 +286,89 @@ footer{
     width: 30%;
     /* height:5rem; */
     background-color: #F2F2F2;
-    padding:0 20px;
+    padding-top: 40px; 
+    /* justify-content: center; */
     border-radius: 20px;
-}
-.part_activites{
-    width: 100%;
-    margin: 40px 0;
-    /* height:5rem; */
-    /* background-color: rgb(58, 58, 58); */
-    /* padding:5px; */
+    align-content: center;
 }
 
 .img-hbgmt, .img-actvt{
-width: 17rem;
-height: 10rem;
-border-radius: 20px 20px 0 0;
-object-fit: none;
+    /* width: 19rem; */
+    width:100%;
+    height: 10rem;
+    border-radius: 20px 20px 0 0;
+    object-fit: none;
 }
 .img-ppl{
     width: 10rem;
-    height: 9rem;
+    /* height: 9rem; */
     object-fit: none;
     border-radius: 20px 0 0 20px;
-
+    
 }
 .items-hebergements{
-    /* width:30% !important; */
+    width:30%;
+}
+.titre-hbgmt, .prix-hbgmt, .star-hbgmt{
+    margin: 7px 15px;
+}
+.text-hbgmt{
+    margin:1.3rem 0;
+    font-size: 1.3rem;
+    font-weight:800;
 }
 
 .items-populaires{
     display: flex;
+    height: 22%;
     max-width:80%;
     width:80%;
-    margin: 15px auto;
+    margin: 25px auto;
+    
 }
-
+.part_activites{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 40px 0;
+    height:33rem;
+    /* background-color: rgb(58, 58, 58); */
+    /* padding:5px; */
+}
 .items-activites{
-    width:30%
+    width:23%;
+    /* float:left; */
 }
+.titre-actvt{
+    margin:1rem 2rem;
+}
+/* .part_activites li:nth-child(2){
+    height:100%;
+}
+.part_activites li:nth-child(3){
+    height:50%;
+}
+.part_activites li:nth-child(4){
+    height:35%;
+}
+.part_activites li:nth-child(5){
+    height:100%;
+}
+.part_activites li:nth-child(6){
+    height:35%;
+}
+.part_activites li:nth-child(7){
+    height:44%;
+} */
+
+
 .txt-ppl{
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     display: flex;
     flex-flow: column wrap;
 }
+
+
 .footerP1, .footerP2, .footerP3{
     width: 26%;
 }
