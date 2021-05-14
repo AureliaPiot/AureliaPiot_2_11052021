@@ -52,6 +52,7 @@ h3{
 h4{
     font-size: 1rem;
     font-weight: 800;
+    margin: 30px 0 15px 0;
 }
 span{
     font-weight: 800;
@@ -251,10 +252,17 @@ footer{
 .prix-hbgmt, .prix-ppl{
     font-size:1.1vw;;
 }
-.img-hbgmt, .img-actvt{
+.img-hbgmt{
     /* width: 19rem; */
     width:100%;
     height: 10rem;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.img-actvt{
+    /* width: 19rem; */
+    width:100%;
+    height:88%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
@@ -320,44 +328,54 @@ footer{
     margin-top: auto;
 }
 
-
-.part_activites{
+.actvt-ul{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
     width: 100%;
+    /* background-color: grey; */
     margin: 40px 0;
-    height:33rem;
-    /* background-color: rgb(58, 58, 58); */
-    /* padding:5px; */
 }
-.items-activites{
-    width:23%;
-    /* float:left; */
+.items-actvt{
+    width: 23%;
+}
+.items-actvt .img-actvt{
+    height: 30rem;
+}
+.items1-actvt .img-actvt{
+    height: 12rem;
+}
+.items2-actvt .img-actvt{
+    height: 13rem;
+}
+.part-actvt{
+    width: 23%;
+}
+.part-actvt .items-actvt{
+    width: unset;
+}
+.img-actvt{
+    width: 100%;
+    height: 12rem;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 .titre-actvt{
-    margin:1rem 2rem;
+    margin: 7px 15px;
 }
 
 
-/* 
-.part_activites li:nth-child(2){
-    align-self: stretch;
-}
-.part_activites li:nth-child(3){
-    height:50%;
-}
-.part_activites li:nth-child(4){
-    height:35%;
-}
-.part_activites li:nth-child(5){
-    height:100%;
-}
-.part_activites li:nth-child(6){
-    height:35%;
-}
-.part_activites li:nth-child(7){
-    height:44%;
-} */
+
+
+
+
+
+
+
+
+
+/* ------------------------------------- */
+
 
 .footerP1, .footerP2, .footerP3{
     width: 26%;
