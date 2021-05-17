@@ -381,6 +381,9 @@ a:hover{
     .container{
         width: 100%;
     }
+    .hautpage{
+        padding: 0 40px;
+    }
     .filtre p{
         width: 100%;
     }
@@ -422,6 +425,7 @@ a:hover{
         border-radius: unset;
         background-color: #F2F2F2;
         order: 2;
+        
     }
     .part_activites{
         display: flex;
@@ -449,6 +453,9 @@ a:hover{
     }
     .filtre p{
         width: 100%;
+    }
+    .prix-hbgmt, .prix-ppl {
+        font-size: 2.1vw;
     }
     .part_populaires{
         display: flex;
@@ -481,8 +488,14 @@ a:hover{
         margin: 40px 0;
         border-radius: unset;
         background-color: #F2F2F2;
+        flex-flow: row wrap;
         order: 2;
     }
+    .items-hebergements{
+        width:40%;
+    }
+
+
     .part_activites{
         display: flex;
         flex-flow: row wrap;
@@ -491,6 +504,21 @@ a:hover{
         height:33rem;
         order: 3;
 
+    }
+    .actvt-ul{
+        flex-flow: column;
+        align-items: center;
+        padding: 0;
+    }
+    .items-actvt {
+        width: 80%;
+    }
+    .part-actvt {
+        width: 80%;
+        display: flex;
+    }
+    .footerP1, .footerP2, .footerP3 {
+        width: 32%;
     }
 }
 /* _______________________300?_____________________________ */
