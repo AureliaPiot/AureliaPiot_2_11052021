@@ -19,31 +19,27 @@
 <body>
     <!-- __________________ en-tete du site ________________________ -->
     <div class="container">
-        <div class="hautpage">
+        
             <header>
                 <!-- ______________________logo + nav + sub________________________ -->
+                <nav>
 
                 <img class="logo" src="images/logo/Reservia@3x.png" alt="Reservia">
-
-                <nav>
+<!-- 
                     <ul class="nav">
-                        <li class="linav ">
-                            <a href="#hebergements" class="navlink">
-                                <p>Hébergements</p>
-                            </a>
-                        </li>
-                        <li class="linav">
-                            <a href="#activites" class="navlink">
-                                <p> Activités</p>
-                            </a>
-                        </li>
-                    </ul>
+                        <li class="linav "> -->
+                            <a href="#hebergements" class="navlink link-hbgmt">Hébergements</a>
+                        <!-- </li>
+                        <li class="linav"> -->
+                            <a href="#activites" class="navlink link-actvt">Activités</a>
+                        <!-- </li>
+                    </ul> -->
+                    
+                    <a href="#" class="navlink link-sign">S'inscrire</a>
                 </nav>
-
-                <a href="#" class="navlink sub">S'inscrire</a>
             </header>
             <!-- ____________________main ! contenu principal du site __________________________ -->
-
+            <div class="hautpage">
             
 
                 <h1 class="mh-10">Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -55,9 +51,12 @@
                         <i class="fas fa-map-marker-alt"></i>
                     </span>
 
-                    <input type="search" class="form-input" placeholder="" aria-label="search">
+                    <input type="text" class="form-input" placeholder="" aria-label="search">
 
-                    <button type="button" class="form-btn">Rechercher</button>
+                    <button type="button" class="form-btn">
+                        <p>Rechercher</p> 
+                        <i class="fas fa-search"></i>
+                    </button>
                 </form>
                 <!-- ________________________filtre_____________________ -->
 
@@ -93,7 +92,7 @@
 
             <!-- ________________________contenu hebergement______________________ -->
             <ul class="part_hebergements" id="hebergements">
-                <li class="titre-part">
+                <li class="titre-part-hbgmt">
                     <h2>Hébergements à Marseille</h2>
                 </li>
                 <li class="card items-hebergements">
@@ -254,32 +253,32 @@
                 <div class="titre-part-actvt">
                     <h2>Activités à Marseille</h2>
                 </div>
-                <a href="#" id="actvt-1"class="card items-actvt-test">
+                <a href="#" id="actvt-1"class="card items-actvt">
                         <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt=""
                             class="img-actvt">
                         <h3 class="titre-actvt">Vieux Port</h3>
                 </a>
-                <a href="#" id="actvt-2"class="card items-actvt-test">
+                <a href="#" id="actvt-2"class="card items-actvt">
                         <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt=""
                             class="img-actvt">
                         <h3 class="titre-actvt">Fort de Pomègues</h3>
                 </a>
-                <a href="#" id="actvt-3"class="card items-actvt-test">
+                <a href="#" id="actvt-3"class="card items-actvt">
                         <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt=""
                             class="img-actvt">
                         <h3 class="titre-actvt">Îles du Frioul</h3>
                 </a>    
-                <a href="#" id="actvt-4"class="card items-actvt-test">
+                <a href="#" id="actvt-4"class="card items-actvt">
                         <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt=""
                             class="img-actvt">
                         <h3 class="titre-actvt">Parc National des Calanques</h3>
                 </a>
-                <a href="#" id="actvt-5"class="card items-actvt-test">
+                <a href="#" id="actvt-5"class="card items-actvt">
                         <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt=""
                             class="img-actvt">
                         <h3 class="titre-actvt">Notre-Dame-de-la-Garde</h3>
                 </a>
-                <a href="#" id="actvt-6"class="card items-actvt-test">
+                <a href="#" id="actvt-6"class="card items-actvt">
                 
                         <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt=""
                             class="img-actvt">

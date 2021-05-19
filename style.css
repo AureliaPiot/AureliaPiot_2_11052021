@@ -17,16 +17,7 @@ body {
     font-family: "Raleway";
     
 }
-header{
-    display: flex;
-}
-nav{
-    margin-left: auto;
-}
-footer{
-    background-color: #F2F2F2;
-    padding-bottom:30px;
-}
+
 
 h1{
     font-size: 1.7rem;
@@ -70,9 +61,6 @@ a:hover{
     margin: 10px 0;
     font-size: 1.2rem;
 }
-.titre-part{
-    width: 100%;
-}
 
 .blu{
     color: #0065FC !important ;
@@ -85,42 +73,45 @@ a:hover{
 }
 
 /* _______________________header_____________________________ */
-
+header{
+    /* display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr; */
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+}
 .logo{
     height: 3.5rem;
-    margin-top: 13px;
-}
-.nav{
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;   
-    align-items: center;
-    color: black;
-}
-
-.linav, .linav:visited{
-    display: flex;
-    height: 100%;
-    color: black;
-    padding: 0 2rem;
-    align-items: flex-end;
-}
-.linav:hover, .linav:visited:hover{
-    color: #0065FC!important;
-    border-top:solid 3px #0065FC ;
+    margin-top: 15px;
 }
 .navlink{
     font-size: 1.2rem;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
+    margin: 0 20px;
 }
-.sub , .sub a:visited{
+.link-hbgmt{
+     grid-column: 3;
+}
+.link-actvt{
+     grid-column: 4;
+}
+.link-sign {
     font-weight: 800;
     color: #0065FC !important;
     align-self: flex-end;
-    margin: 0 2rem;
+    /* margin: 0 2rem; */
+     grid-column: 5;
 }
+.link-actvt:hover, .link-actvt:visited:hover, .link-hbgmt:hover, .link-hbgmt:visited:hover {
+    color: #0065FC!important;
+    border-top:solid 3px #0065FC;
+    transition: none;
+} 
 
 /* __________________Form__________________________________ */
 
@@ -132,6 +123,11 @@ a:hover{
     flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
+}
+input{
+    font-weight: 900;
+    max-width: 15rem;
+    min-width: 3rem;
 }
 
 .form-srch{
@@ -166,7 +162,9 @@ a:hover{
     border-radius: 15px 0 0 15px;
     font-size: 1.3rem;  
 }
-
+.fa-search{
+    display: none !important;
+}
 /* _______________________filtre_____________________________ */
 
 
@@ -187,8 +185,13 @@ a:hover{
     border: #D9D9D9 2px solid;
     border-left: transparent;
     border-radius: 0 30px 30px 0;
-    padding: 16px 30px 16px 40px;
+    padding: 16px 20px 16px 33px;
     margin-left: -26px;
+}
+.filtrebox p:hover{
+    background-color: #DEEBFF;
+    transition:.3s;
+
 }
 
 .fa-star{
@@ -239,7 +242,7 @@ a:hover{
 }
 .card:hover{
     transform:scale(1.05);
-    transition: ease-in-out .5s;
+    transition: .3s;
 }
 
 .titre-hbgmt, .prix-hbgmt, .note-hbgmt{
@@ -263,11 +266,13 @@ a:hover{
 .items-hebergements{
     width:30%;
     margin: 25px 0px;
-
+}
+.titre-part-hbgmt{
+    width: 100%;
 }
 .img-hbgmt{
     width:100%;
-    height: 10rem;
+    height: 10vw;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
@@ -295,7 +300,7 @@ a:hover{
 .items-populaires{
     display: flex;
     height: 24%;
-    max-width:80%;
+    /* max-width:80%; */
     width:80%;
     margin: 25px auto;
     
@@ -334,46 +339,7 @@ a:hover{
     margin: 40px 0;
     padding: 0;
     order: 3;
-}
-
-.img-actvt{
-    width:100%;
-    height:88%;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-}
-.items-actvt{
-    width: 23%;
-}
-.items-actvt .img-actvt{
-    height: 30rem;
-}
-.items1-actvt .img-actvt{
-    height: 12rem;
-}
-.items2-actvt .img-actvt{
-    height: 13rem;
-}
-.part-actvt{
-    width: 23%;
-}
-.part-actvt .items-actvt{
-    width: unset;
-}
-
-.titre-actvt{
-    margin: 7px 15px;
-
 } */
-.actvt-ul{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin: 40px 0;
-    padding: 0;
-    order: 3;
-}
 
 .img-actvt{
     width:100%;
@@ -384,27 +350,29 @@ a:hover{
 }
 
 .titre-actvt{
-    margin: -40px 25px;
+    margin: -40px 0px -40px 25px;
 
 }
 #activites{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2rem 12vw 0.5vw 0.5vw 12vw;
-    grid-gap: 40px;
-    margin: 40px 0;
-    padding: 0;
+    grid-gap: 2vw ;
+    width: 100%;
+    margin: 4vw 0;
+    padding: 0 20px;
     order: 3;
+    grid-template-areas: "actvt-ttr"" actvt-1 "" actvt-2 "" actvt-3 actvt-4 "" actvt-5 "" actvt-6";
 }
 
 .titre-part-actvt{
-    grid-area: ttr-actvt;
-    grid-column: 1 / fill;
+    grid-area: actvt-ttr;
+    grid-column: 1 /5;
     grid-row: 1;
 }
 #actvt-1{
     
-    grid-area: actvt-1;
+    grid-area: "actvt-1";
     grid-column: 1;
     grid-row: 2 / 6 ;
 
@@ -440,6 +408,13 @@ a:hover{
 
 
 /* _______________________footer_____________________________ */
+footer{
+    background-color: #F2F2F2;
+    padding-bottom:30px;
+    padding-top:10px;
+
+}
+
 .flexFooter{
     display: flex;
     flex-flow: row wrap;
@@ -448,13 +423,17 @@ a:hover{
 
 .footerP1, .footerP2, .footerP3{
     width: 30%;
+    min-width: 266px;
 }
 .fp1, .fp2, .fp3{
     margin: 10px 0;;
 }
-/* _______________________1500_____________________________ */
+/* _______________________1200_____________________________ */
 /* //////////////////////////////////////////////////////// */
 @media (max-width: 1200px){
+    header{
+        padding:0 40px;
+    }
     h3{
         font-size: 1.5vw;
     }
@@ -462,11 +441,16 @@ a:hover{
         width: 100%;
     }
     .hautpage{
-        padding: 0 40px;
+        padding: 0 20px;
     }
     .filtre p{
         width: 100%;
     }
+    .filtrebox{
+        margin: 1rem;   
+    }
+/* ___________________populaire 1200_________________________________ */
+
     .part_populaires{
         display: flex;
         flex-flow: row wrap;
@@ -484,7 +468,9 @@ a:hover{
         padding: 0 25px;
         justify-content: space-between;
     }
-   
+    .titre-ppl{
+        font-size: 1.5vw;
+    }
  
     .prix-ppl{
         font-size: 1.35vw;
@@ -496,6 +482,8 @@ a:hover{
         margin: 25px auto;
         
     }
+/* __________hebergement 1200_____________________________ */
+
     .part_hebergements{
         width: 100%;
         padding: 30px;
@@ -504,8 +492,21 @@ a:hover{
         background-color: #F2F2F2;
         order: 2;
     }
+    .titre-hbgmt, .note-hbgmt {
+        font-size: 2vw;
+        margin: 7px 15px;
+    }
+    .prix-hbgmt {
+        font-size: 1.6vw;
+        margin: 7px 15px;
+    
+    }
+    
+/* ______________activite 1200_____________________________ */
+
     .titre-actvt{
-        font-size: 1.2vw;
+        font-size: 1.4vw;
+        margin: -40px 0px -40px 15px;
     }
 }
 /* _______________________800_____________________________ */
@@ -513,22 +514,72 @@ a:hover{
 
 
 @media (max-width: 800px){
+    header{
+        padding:0;
+    }
+    
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .logo{
+        height: 3.5rem;
+        margin: 15px 0 0 40px;
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+    .navlink{
+        font-size: 1.2rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin: 0;
+    }
+    .link-hbgmt{
+        padding: 16px;
+         grid-column: 1;
+         grid-row: 2;
+    }
+    .link-actvt{
+        padding: 16px;
+         grid-column: 2;
+         grid-row: 2;
+
+    }
+    .link-sign {
+         grid-column: 2;
+         grid-row: 1;
+    }
+    .link-actvt:hover, .link-actvt:visited:hover, .link-hbgmt:hover, .link-hbgmt:visited:hover {
+        color: #0065FC!important;
+        border-bottom:solid 3px #0065FC;
+        border-top:none;
+
+    } 
+    
     h3{
-        font-size: 3vw;
+        font-size: 2.7vw;
     }
     .container{
         width: 100%;
     }
-    .filtre p{
-        width: 100%;
+
+    .form-srch {
+        justify-content: center;
     }
+/* ________________populaire 800________________________________ */
+
     .prix-hbgmt, .prix-ppl {
-        font-size: 2.1vw;
+        font-size: 2.7vw;
     }
     .part_populaires{
         display: flex;
         flex-flow: column;
-        padding: 0 30px; 
+        padding:30px; 
         background-color: #F2F2F2;
         border-radius: unset;
         justify-content: space-around;
@@ -545,11 +596,15 @@ a:hover{
     }
     .items-populaires{
         display: flex;
-        height: 30%;
-        width: 100%;
-        margin: 0 0;
-        
+        height: 20vw;
+        width: 80%;
+        margin: 15px 0;   
     }
+    .titre-ppl {
+        font-size: 2.6vw;
+    }
+/* ______________hebergement 800_________________________________ */
+
     .part_hebergements{
         width: 100%;
         padding: 30px;
@@ -560,31 +615,78 @@ a:hover{
         order: 2;
     }
     .items-hebergements{
-        width:40%;
+        width:45%;
+        height: 36vw;
+    }
+    .img-hbgmt {
+        height: 60% ;
+    }
+    .titre-hbgmt {
+        font-size: 2.9vw;
+    
     }
 
+/* __________activite 800____________________________________ */
 
-    .part_activites{
-        display: flex;
-        flex-flow: row wrap;
-        width: 100%;
-        margin: 40px 0;
-        height:33rem;
+    #activites {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 2rem 36vw 36vw 36vw;
+        /* pourquoi le 1fr 1fr 1fr ne passe pas? */
+        grid-gap: 3vw 3vw;
+        margin: 4vw 0;
+        padding: 0 15px;
         order: 3;
+    }
 
+    .titre-part-actvt{
+        grid-area: "actvt-ttr";
+        grid-column: 1/3 !important;
+        grid-row: 1 !important;
     }
-    .actvt-ul{
-        flex-flow: column;
-        align-items: center;
-        padding: 0;
+    .titre-actvt{
+        font-size:2.5vw;
     }
-    .items-actvt {
-        width: 80%;
+    #actvt-1{
+        
+        grid-area: "actvt-1";
+        grid-column: 1 !important;
+        grid-row:  2  !important;
+    
     }
-    .part-actvt {
-        width: 80%;
-        display: flex;
+    #actvt-2{
+        grid-area: "actvt-2";
+        grid-column: 2 !important;
+        grid-row: 2 !important;
     }
+    #actvt-3{
+        grid-area:"actvt-3";
+        grid-column: 1 !important;
+        grid-row: 3 !important;
+    }
+    #actvt-4{
+        grid-area:"actvt-4";
+        grid-column: 2 !important;
+        grid-row: 3 !important; 
+    }
+    #actvt-5{
+        grid-area:"actvt-5";
+        grid-column: 1 !important;
+        grid-row: 4 !important;
+    }
+    #actvt-6{
+        grid-area:"actvt-6";
+        grid-column: 2 !important;
+        grid-row: 4 !important;
+    }
+
+
+/* ___________footer 800____________________________________ */
+
+
+
+
+
     .flexFooter {
         flex-direction: column;
     }
@@ -592,6 +694,116 @@ a:hover{
         width: 100%;
     }
 }
-/* _______________________300?_____________________________ */
+/* _______________________500_____________________________ */
 /* //////////////////////////////////////////////////////// */
+@media (max-width: 550px){
 
+    .form-btn p{
+        display:none !important;
+    }
+    .fa-search{
+        display:block !important;
+    }
+  
+
+   
+
+/* ________populaire 500______________ */
+
+    .part_populaires{
+        display: flex;
+        flex-flow: column;
+        padding:30px; 
+        background-color: #F2F2F2;
+        border-radius: unset;
+        justify-content: space-around;
+        align-items: center;
+        order:1;
+    }
+    .titre-part-ppl{
+        display: flex;
+        font-size: 1.7rem;
+        width: 100%;
+    }
+    .titre-part-ppl h2{
+        width: fit-content;
+    }
+    .items-populaires{
+        display: flex;
+        height: 25%;
+        width: 100%;
+        margin: 0 0;
+        
+    }
+    .titre-ppl {
+        font-size: 4vw;
+    }
+    .prix-ppl {
+        font-size: 4vw;
+    }
+
+    /* ______________hebergement 500_________________________________ */
+
+    .part_hebergements{
+        width: 100%;
+        padding: 30px;
+        margin: 40px 0;
+        border-radius: unset;
+        background-color: #F2F2F2;
+        flex-flow: row wrap;
+        order: 2;
+    }
+    .titre-part-hbgmt{
+        margin-bottom: 15px;
+    }
+    .items-hebergements{
+        width:100%;
+        height: 46vw;
+        margin: 15px 0px;
+    }
+    .img-hbgmt {
+        height: 60%;
+    }
+    .titre-hbgmt{
+        font-size: 4.7vw;
+        margin: 1vw 15px;
+    }
+    .prix-hbgmt{
+        font-size: 4vw;
+        margin: 1vw 15px;
+    }
+    .note-hbgmt {
+        margin: 1vw 15px;
+        font-size: 1.5vw;
+    }
+ .items-hebergements .fa-star {
+    font-size: 3vw;
+    }
+/* __________activite 500____________________________________ */
+
+    #activites {
+        display: flex;
+        /* grid-template-columns: 1fr; */
+        /* grid-template-rows: 2rem 36vw 36vw 36vw 36vw 36vw 36vw; */
+        /* pourquoi le 1fr 1fr 1fr ne passe pas? */
+        /* grid-gap: 3vw; */
+        flex-flow: column;
+        margin: 4vw 0;
+        padding: 0 15px;
+        order: 3;
+    }
+
+    .titre-part-actvt{
+        grid-area: "actvt-ttr";
+        grid-column: 1;
+        grid-row: 1 !important;
+    }
+    .titre-actvt {
+        font-size: 4.5vw;
+    }
+    .items-actvt{
+        height: 40vw;
+        width: 90%;
+        align-self: center;
+    }
+}
