@@ -2,54 +2,58 @@
     box-sizing:border-box;
     margin: 0;
 }
-/* HTML5 display-role reset for older browsers */
-/* article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-} */
+
 ol, ul, li {
     list-style: none;
 }
+
 body {
     font-family: "Raleway";
 }
+
 h1{
     font-size: 1.7rem;
     font-weight: 800 ;
     margin-top: 2rem;
 }
+
 h2{
     font-size: 1.7rem;
     font-weight: 800;
     width: 100%;
 }
+
 h3{
     font-size: 1.15vw;
     font-weight: 800;
 }
+
 h4{
     font-size: 1rem;
     font-weight: 800;
     margin: 30px 0 15px 0;
 }
+
 span{
     font-weight: 800;
 }
+
 a{
     text-decoration-line: none;
     color: black;
 }
+
 a:hover{
     color:#0065FC ;
     transition: .3s;
 }
-
 
 .container{
     width: 93%;
     margin: auto;
     padding: 0 !important;
 }
+
 .description{
     margin: 10px 0;
     font-size: 1.2rem;
@@ -58,23 +62,29 @@ a:hover{
 .blue{
     color: #0065FC !important ;
 }
+
 .fa-star{
     color:#D9D9D9;
 }
+
 .flex{
     display: flex;
 }
 
+
 /* _______________________header_____________________________ */
+
 
 nav{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
 }
+
 .logo{
     height: 3.5rem;
     margin-top: 15px;
 }
+
 .navlink{
     font-size: 1.2rem;
     width: 100%;
@@ -84,25 +94,32 @@ nav{
     justify-content: center;
     margin: 0 20px;
 }
+
 .link-hbgmt{
      grid-column: 3;
 }
+
 .link-actvt{
      grid-column: 4;
 }
+
 .link-sign {
     font-weight: 800;
     color: #0065FC !important;
     align-self: flex-end;
     grid-column: 5;
 }
+
 .link-actvt:hover, .link-actvt:visited:hover, .link-hbgmt:hover, .link-hbgmt:visited:hover {
     color: #0065FC!important;
     border-top:solid 3px #0065FC;
     transition: none;
 } 
 
+
 /* __________________Form__________________________________ */
+
+
 
 .search{
     width: 15rem !important;
@@ -113,23 +130,30 @@ nav{
     align-items: stretch;
     width: 100%;
 }
+
+
 input{
     font-weight: 900;
     max-width: 15rem;
     min-width: 3rem;
 }
 
+
 .form-srch{
     display: flex;
     height: 3rem;
     margin: 1.5rem 0;   
 }
+
+
 .form-input, .form-btn{
     padding: 0.65rem .75rem;
     margin-left: -.3rem;
     font-size: 1.15rem;
     border: 1px solid #F2F2F2;
 }
+
+
 .form-btn{
     border: unset;
     border-radius: 0 15px 15px 0;
@@ -138,9 +162,12 @@ input{
     background-color: #0065FC;
     font-size: 1.2rem;
 }
+
 .form-btn:active{
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.444) inset;
 }
+
+
 .btn-at{
     
     display: flex;
@@ -152,9 +179,13 @@ input{
     border-radius: 15px 0 0 15px;
     font-size: 1.3rem;  
 }
+
+
 .btn-icon{
     display: none !important;
 }
+
+
 /* _______________________filter_____________________________ */
 
 
@@ -167,10 +198,12 @@ input{
     font-weight: 800;
 }
 
+
 .filterbox{
     display: flex;
     margin: 1rem;
 }
+
 .filterbox p {
     border: #D9D9D9 2px solid;
     border-left: transparent;
@@ -178,12 +211,17 @@ input{
     padding: 16px 20px 16px 33px;
     margin-left: -26px;
 }
+
 .filterbox p:hover{
     background-color: #0311251e;
 }
+
+
 .fa-star{
     font-size: 14px;
 }
+
+
 .filter .fas{
     z-index: 1;
     font-size: 1.5rem;
@@ -195,9 +233,12 @@ input{
     padding: 15px;
     color: #0065FC;
 }
+
+
 .info{
     margin: 20px 0px;
 }
+
 .info .fas{
     font-size: 13px;
     width: 30px;
@@ -208,7 +249,11 @@ input{
     border-radius: 50%;
     border: #D9D9D9 1px solid;
 }
+
+
 /* _______________________contenu_____________________________ */
+
+
 
 main{
     display: flex;
@@ -223,20 +268,26 @@ main{
     border-radius: 25px;
     box-shadow: 10px 10px 10px #0000001f;
 }
+
 .card:hover{
     transform:scale(1.03);
     transition: .3s;
 }
+
 .card:active{
     transform:scale(1);
     transition: none;
 }
 
+
 .price-hbgmt, .price-ppl{
     font-size:1.1vw;;
 }
 
+
 /* _______________________hebergements_____________________________ */
+
+
 
 #hebergements{
     width: 65%;
@@ -244,19 +295,26 @@ main{
     background-color: #F2F2F2;
     border-radius: 20px;
 }
+
+
 .tilte-part-hbgmt{
     width: 100%;
 }
+
+
 .list-hbgmt{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 0;
 }
+
+
 .items-hbgmt{
     width:30%;
     margin: 25px 0px;
 }
+
 
 .img-hbgmt{
     width:100%;
@@ -265,9 +323,11 @@ main{
     object-fit: cover;
 }
 
+
 .title-hbgmt, .price-hbgmt, .note-hbgmt{
     margin: 7px 15px;
 }
+
 
 .showmore{
     width: 100%;
@@ -275,7 +335,11 @@ main{
     font-size: 1.3rem;
     font-weight:800;
 }
+
+
 /* _______________________populaires_____________________________ */
+
+
 
 #populaires{
     display: flex;
@@ -287,12 +351,16 @@ main{
     border-radius: 20px;
     align-content: center;
 }
+
+
 .title-part-ppl{
     display: flex;
     font-size: 1.7rem;
     align-self: center;
     width: 100%;
 }
+
+
 .list-ppl{
     display: flex;
     flex-flow: column;
@@ -301,17 +369,21 @@ main{
     padding: 0;
 }
 
+
 .items-ppl{
     display: flex;
     height: 25%;
     width:100%;
     margin: 25px auto;
 }
+
+
 .img-ppl{
     width: 40%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
+
 
 .txt-ppl{
     padding: 20px 10px 10px 20px;
@@ -319,12 +391,17 @@ main{
     flex-flow: column;
 }
 
+
 .price-ppl{
     margin-top: 5px;
 }
+
+
 .note-ppl{
     margin-top: auto;
 }
+
+
 
 /* _______________________activites_____________________________ */
 
@@ -340,10 +417,12 @@ main{
     order: 3;
 }
 
+
 .title-part-actvt{
     grid-column: 1 /5;
     grid-row: 1;
 }
+
 
 .img-actvt{
     width:100%;
@@ -352,6 +431,7 @@ main{
     object-fit: cover;
     padding-bottom: 3rem;
 }
+
 
 .title-actvt{
     margin: -40px 0px -40px 25px;
@@ -362,34 +442,42 @@ main{
     grid-column: 1;
     grid-row: 2 / 6 ;
 }
+
 #actvt-2{
     grid-column: 2;
     grid-row: 2/5;
 }
+
 #actvt-3{
     grid-column: 2;
     grid-row: 5;
 }
+
 #actvt-4{
     grid-column: 3;
     grid-row: 2 / 6;
 }
+
 #actvt-5{
     grid-column: 4;
     grid-row: 2;
 }
+
 #actvt-6{
     grid-column: 4;
     grid-row:  3/6;
 }
 
+
 /* _______________________footer_____________________________ */
+
+
 footer{
     background-color: #F2F2F2;
     padding-bottom:30px;
     padding-top:10px;
-
 }
+
 
 .flexFooter{
     display: flex;
@@ -397,34 +485,53 @@ footer{
     justify-content: space-evenly;
 }
 
+
 .footerP1, .footerP2, .footerP3{
     width: 30%;
     min-width: 266px;
 }
+
+
 .fp1, .fp2, .fp3{
     margin: 10px 0;;
 }
+
+
 /* _______________________1200_____________________________ */
 /* //////////////////////////////////////////////////////// */
+
+
 @media (max-width: 1200px){
     header{
         padding:0 40px;
     }
+
+
     h3{
         font-size: 1.5vw;
     }
+
+
     .container{
         width: 100%;
     }
+
+
     .upperzone{
         padding: 0 20px;
     }
+
+
     .filter p{
         width: 100%;
     }
+
+
     .filterbox{
         margin: 0.5rem;   
     }
+
+
 /* ___________________populaire 1200_________________________________ */
 
     #populaires{
@@ -436,6 +543,8 @@ footer{
         border-radius: unset;
         order:1;
     }
+
+
     .title-part-ppl{
         display: flex;
         font-size: 1.7rem;
@@ -443,23 +552,33 @@ footer{
         padding: 0 25px;
         justify-content: space-between;
     }
+
+
     .list-ppl{
         flex-flow: row;
     }
+
+
     .items-ppl{
         display: flex;
         height: 16vw;
         width:30%;
         margin: 25px auto;   
     }
+
+
     .title-ppl{
         font-size: 1.5vw;
     }
+
+
     .price-ppl{
         font-size: 1.35vw;
     }
+
  
 /* __________hebergement 1200_____________________________ */
+
 
     #hebergements{
         width: 100%;
@@ -468,42 +587,62 @@ footer{
         border-radius: unset;
         order: 2;
     }
+
+
     .title-hbgmt, .note-hbgmt {
         font-size: 2vw;
         margin: 7px 15px;
     }
+
+
     .price-hbgmt {
         font-size: 1.6vw;
         margin: 7px 15px;
     }
     
+
 /* ______________activite 1200_____________________________ */
+
 
     .title-actvt{
         font-size: 1.4vw;
         margin: -40px 0px -40px 15px;
     }
 }
-/* _______________________800_____________________________ */
+
+
+/* _______________________800___________________________________________________ */
 /* ////////////////////////////////////////////////////////*/
 
 
 @media (max-width: 800px){
+
+
     header{
         padding:0;
     }
     
+
     nav{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    
+    
+    h3{
+        font-size: 2.7vw;
+    }
+
+
     .logo{
         height: 3.5rem;
         margin: 15px 0 0 40px;
         grid-column: 1;
         grid-row: 1;
     }
+
+
     .navlink{
         font-size: 1.2rem;
         width: 100%;
@@ -514,39 +653,48 @@ footer{
         margin: 0;
         padding: 10px;
     }
+
+
     .link-hbgmt{
          grid-column: 1;
          grid-row: 2;
          border-bottom:solid 3px #F2F2F2;
     }
+
+
     .link-actvt{
          grid-column: 2;
          grid-row: 2;
          border-bottom:solid 3px #F2F2F2;
-
     }
+
+
     .link-sign {
          grid-column: 2;
          grid-row: 1;
     }
+
+
     .link-actvt:hover, .link-actvt:visited:hover, .link-hbgmt:hover, .link-hbgmt:visited:hover {
         color: #0065FC!important;
         border-bottom:solid 3px #0065FC;
         border-top:none;
     } 
-    
-    h3{
-        font-size: 2.7vw;
-    }
+
+
     .container{
         width: 100%;
     }
 
+
     .form-srch {
         justify-content: center;
     }
+
+
 /* ________________populaire 800________________________________ */
   
+
     #populaires{
         display: flex;
         flex-flow: column;
@@ -557,31 +705,45 @@ footer{
         align-items: center;
         order:1;
     }
+
+
     .title-part-ppl{
         display: flex;
         font-size: 1.7rem;
         width: 100%;
         margin-bottom: 25px;
     }
+
+
     .list-ppl{
         flex-flow: column;
     }
+
+
     .items-ppl{
         display: flex;
         height: 19vw;
         width: 80%;
         margin: 15px auto;   
     }
+
+
     .txt-ppl{
         padding: 10px;
         width: 100%;
     }
+
+
     .title-ppl {
         font-size: 2.6vw;
     }
+
+
     .price-hbgmt, .price-ppl {
         font-size: 2.7vw;
     }
+
+
 /* ______________hebergement 800_________________________________ */
 
     #hebergements{
@@ -593,18 +755,26 @@ footer{
         flex-flow: row wrap;
         order: 2;
     }
+
+
     .items-hbgmt{
         width:45%;
         height: 36vw;
     }
+
+
     .img-hbgmt {
         height: 60% ;
     }
+
+
     .title-hbgmt {
         font-size: 2.9vw;
     }
 
+
 /* __________activite 800____________________________________ */
+
 
     #activites {
         display: grid;
@@ -616,35 +786,44 @@ footer{
         order: 3;
     }
 
+
     .title-part-actvt{
   
         grid-column: 1/3 !important;
         grid-row: 1 !important;
     }
+
+
     .title-actvt{
         font-size:2.5vw;
     }
+
+
     #actvt-1{
         grid-column: 1 !important;
         grid-row:  2  !important;
-    
     }
+
     #actvt-2{
         grid-column: 2 !important;
         grid-row: 2 !important;
     }
+
     #actvt-3{
         grid-column: 1 !important;
         grid-row: 3 !important;
     }
+
     #actvt-4{
         grid-column: 2 !important;
         grid-row: 3 !important; 
     }
+
     #actvt-5{
         grid-column: 1 !important;
         grid-row: 4 !important;
     }
+
     #actvt-6{
         grid-column: 2 !important;
         grid-row: 4 !important;
@@ -655,29 +834,45 @@ footer{
     footer{
         margin-top:40px;
     }
+
+
     .flexFooter {
         flex-direction: column;
     }
+
+
     .footerP1, .footerP2, .footerP3 {
         width: 100%;
     }
+
 }
-/* _______________________550_____________________________ */
+
+
+/* _______________________550_________________________________________________ */
 /* //////////////////////////////////////////////////////// */
 @media (max-width: 550px){
+
 
     h2 {
         font-size: 1.5rem;
     }
+
+
     .btn-text{
         display:none !important;
     }
+
+
     .btn-icon{
         display:block !important;
     }
+
+
     .filterbox{
         margin: 0.3rem;   
     }
+
+
 /* ________populaire 550______________ */
 
     #populaires{
@@ -690,31 +885,44 @@ footer{
         align-items: center;
         order:1;
     }
+
+
     .title-part-ppl{
         display: flex;
         font-size: 1.7rem;
         width: 100%;
         padding: 0;
     }
+
+
     .title-part-ppl h2{
         width: fit-content;
     }
+
+
     .items-ppl{
         display: flex;
         height: 30%;
         width: 100%;
         margin: 0 0;
     }
+
+
     .txt-ppl {
         padding: 10px 10px 10px 10px;
     }
+
+
     .title-ppl {
         font-size: 4vw;
     }
+
+
     .price-ppl {
         font-size: 4vw;
     }
 
+    
     /* ______________hebergement 550_________________________________ */
 
     #hebergements{
@@ -725,37 +933,55 @@ footer{
         flex-flow: row wrap;
         order: 2;
     }
+
+
     .tilte-part-hbgmt{
         margin-bottom: 15px;
     }
+
+
     .list-hbgmt {
         flex-flow: column;
     }
+    
 
     .items-hbgmt{
         width:100%;
         height: 46vw;
         margin: 15px 0px;
     }
+
+
     .img-hbgmt {
         height: 60%;
     }
+
+
     .title-hbgmt{
         font-size: 4.7vw;
         margin: 1vw 15px;
     }
+
+
     .price-hbgmt{
         font-size: 4vw;
         margin: 1vw 15px;
     }
+
+
     .note-hbgmt {
         margin: 1vw 15px;
         font-size: 1.5vw;
     }
- .items-hbgmt .fa-star {
+
+
+    .items-hbgmt .fa-star {
     font-size: 3vw;
     }
+
+
 /* __________activite 550____________________________________ */
+
 
     #activites {
         display: flex;
@@ -764,13 +990,18 @@ footer{
         padding: 0 15px;
         order: 3;
     }
+
+
     .title-actvt {
         font-size: 4.5vw;
     }
+
+
     .items-actvt{
         height: 40vw;
         width: 90%;
         align-self: center;
     }
+    
 }
 
