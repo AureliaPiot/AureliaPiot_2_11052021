@@ -1,0 +1,147 @@
+@media (max-width: 1200px){
+    header{
+        padding:0 40px;
+    }
+
+
+    h3{
+        font-size: 1.5vw;
+    }
+
+
+    .container{
+        width: 100%;
+    }
+
+
+    .upperzone{
+        padding: 0 20px;
+    }
+
+
+    .filter p{
+        width: 100%;
+    }
+
+
+    .filterbox{
+        margin: 0.5rem;   
+    }
+
+
+/* ___________________populaire 1200_________________________________ */
+
+    #populaires{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 20px 10px 0 10px;
+        width: 100%;
+        background-color: #F2F2F2;
+        border-radius: unset;
+        order:1;
+    }
+
+
+    .title-part-ppl{
+        display: flex;
+        font-size: 1.7rem;
+        width: 100%;
+        padding: 0 25px;
+        justify-content: space-between;
+    }
+
+
+    .list-ppl{
+        flex-flow: row;
+    }
+
+
+    .items-ppl{
+        display: flex;
+        height: 16vw;
+        width:30%;
+        margin: 25px auto;   
+    }
+
+
+    .title-ppl{
+        font-size: 1.5vw;
+    }
+
+
+    .price-ppl{
+        font-size: 1.35vw;
+    }
+
+ 
+/* __________hebergement 1200_____________________________ */
+
+
+    #hebergements{
+        width: 100%;
+        padding: 30px;
+        margin: 40px 0;
+        border-radius: unset;
+        order: 2;
+    }
+
+
+    .title-hbgmt, .note-hbgmt {
+        font-size: 2vw;
+        margin: 7px 15px;
+    }
+
+
+    .price-hbgmt {
+        font-size: 1.6vw;
+        margin: 7px 15px;
+    }
+    
+
+/* ______________activite 1200_____________________________ */
+#activites {
+    display: grid;
+    grid-template-areas: "actvt-titre  actvt-titre actvt-titre" 
+                        "actvt-1 actvt-2 actvt-3" 
+                        "actvt-4 actvt-5 actvt-6" ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2rem 25vw 25vw ;
+    grid-gap: 3vw ;
+    margin: 4vw 0;
+    padding: 0 15px;
+    order: 3;
+    }
+
+    .title-actvt{
+        font-size: 1.8vw;
+        margin: -40px 0px -40px 15px;
+    }
+
+    .title-part-actvt{
+        grid-area: actvt-titre;
+    }
+
+    #actvt-1{
+        grid-area: actvt-1;
+    }
+    
+    #actvt-2{
+        grid-area: actvt-2;
+    }
+    
+    #actvt-3{
+        grid-area: actvt-3;
+    }
+    
+    #actvt-4{
+        grid-area: actvt-4;
+    }
+    
+    #actvt-5{
+        grid-area: actvt-5;
+    }
+    
+    #actvt-6{
+        grid-area: actvt-6;
+    }
+}

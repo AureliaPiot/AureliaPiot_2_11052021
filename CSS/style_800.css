@@ -1,0 +1,194 @@
+@media (max-width: 800px){
+
+
+    header{
+        padding:0;
+    }
+    
+
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    
+    h3{
+        font-size: 2.7vw;
+    }
+
+
+    .logo{
+        height: 3.5rem;
+        margin: 15px 0 0 40px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+
+    .navlink{
+        font-size: 1.2rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+
+    .link-hbgmt{
+         grid-column: 1;
+         grid-row: 2;
+         border-bottom:solid 3px #F2F2F2;
+    }
+
+
+    .link-actvt{
+         grid-column: 2;
+         grid-row: 2;
+         border-bottom:solid 3px #F2F2F2;
+    }
+
+
+    .link-sign {
+         grid-column: 2;
+         grid-row: 1;
+    }
+
+
+    .link-actvt:hover,  .link-hbgmt:hover {
+        color: #0065FC ;
+        border-bottom:solid 3px #0065FC;
+        border-top:none;
+    } 
+
+
+    .container{
+        width: 100%;
+    }
+
+
+    .form-srch {
+        justify-content: center;
+    }
+
+
+/* ________________populaire 800________________________________ */
+  
+
+    #populaires{
+        display: flex;
+        flex-flow: column;
+        padding: 30px 10px; 
+        background-color: #F2F2F2;
+        border-radius: unset;
+        justify-content: space-around;
+        align-items: center;
+        order:1;
+    }
+
+
+    .title-part-ppl{
+        display: flex;
+        font-size: 1.7rem;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+
+    .list-ppl{
+        flex-flow: column;
+    }
+
+
+    .items-ppl{
+        display: flex;
+        height: 19vw;
+        width: 80%;
+        margin: 15px auto;   
+    }
+
+
+    .txt-ppl{
+        padding: 10px;
+        width: 100%;
+    }
+
+
+    .title-ppl {
+        font-size: 2.6vw;
+    }
+
+
+    .price-hbgmt, .price-ppl {
+        font-size: 2.7vw;
+    }
+
+
+/* ______________hebergement 800_________________________________ */
+
+    #hebergements{
+        width: 100%;
+        padding: 30px;
+        margin: 40px 0;
+        border-radius: unset;
+        background-color: transparent;
+        flex-flow: row wrap;
+        order: 2;
+    }
+
+
+    .items-hbgmt{
+        width:45%;
+        height: 36vw;
+    }
+
+
+    .img-hbgmt {
+        height: 60% ;
+    }
+
+
+    .title-hbgmt {
+        font-size: 2.9vw;
+    }
+
+
+/* __________activite 800____________________________________ */
+
+
+    #activites {
+        display: grid;
+        grid-template-areas: "actvt-titre  actvt-titre" 
+                            "actvt-1 actvt-2" 
+                            "actvt-3 actvt-4" 
+                            "actvt-5 actvt-6" ;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 2rem 36vw 36vw 36vw;
+        grid-gap: 3vw 3vw;
+        margin: 4vw 0;
+        padding: 0 15px;
+        order: 3;
+    }
+    .title-actvt{
+        font-size: 2.4vw;
+    }
+
+/* ___________footer 800____________________________________ */
+    footer{
+        margin-top:40px;
+    }
+
+
+    .flexFooter {
+        flex-direction: column;
+    }
+
+
+    .footerP1, .footerP2, .footerP3 {
+        width: 100%;
+    }
+
+}
